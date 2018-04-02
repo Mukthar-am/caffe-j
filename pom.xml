@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.caffeine.server</groupId>
+    <artifactId>caffe-j</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>caffe-j</name>
+    <url>http://maven.apache.org</url>
+
+    <repositories>
+        <repository>
+            <id>nexus.opencastProject.org</id>
+            <url>http://repository.opencastproject.org/nexus/content/repositories/public</url>
+            <name>Opencast Nexus All Public Project Repository</name>
+        </repository>
+    </repositories>
+
+    <properties>
+        <smack.version>3.3.1</smack.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/jivesoftware/smack -->
+        <dependency>
+            <groupId>jivesoftware</groupId>
+            <artifactId>smack</artifactId>
+            <version>${smack.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.igniterealtime.smack/smackx -->
+        <dependency>
+            <groupId>org.igniterealtime.smack</groupId>
+            <artifactId>smackx</artifactId>
+            <version>${smack.version}</version>
+        </dependency>
+
+    </dependencies>
+</project>
